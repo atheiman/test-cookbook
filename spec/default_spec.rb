@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 # describe 'test_cookbook::default' do
-#   let(:something) { 'something' }
+#   # let(:something) { 'something' }
 
 #   context 'some context' do
 #     cached(:chef_run) do
