@@ -1,5 +1,7 @@
 language: ruby
 
+cache: bundler
+
 gemfile:
 - Gemfile
 - chef-12.Gemfile
