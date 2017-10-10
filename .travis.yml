@@ -23,3 +23,6 @@ services:
 
 script:
 - bundle exec ./.travis.sh
+
+matrix:
+  fast_finish: true
