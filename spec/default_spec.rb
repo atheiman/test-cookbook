@@ -11,7 +11,7 @@ describe 'test_cookbook::default' do
     end
 
     it do
-      expect(chef_run).to periodic_apt_update('')
+      expect(chef_run).to periodic_apt_update('update lists of packages')
     end
 
     it do
