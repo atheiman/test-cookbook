@@ -1,15 +1,17 @@
 language: ruby
 
+cache: bundler
+
 gemfile:
 - Gemfile
-- chef-12.5.Gemfile
+- chef-12.Gemfile
 
 sudo: required
 
 dist: trusty
 
 rvm:
-- 2.3.1
+- 2.4.2
 
 env:
 - SUITE=chefspec
@@ -23,6 +25,4 @@ script:
 - bundle exec ./.travis.sh
 
 matrix:
-  allow_failures:
-  - gemfile: chef-12.5.Gemfile
   fast_finish: true

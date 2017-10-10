@@ -1,3 +1,5 @@
+#!/bin/bash
+
 set -ev
 
 case $SUITE in
@@ -5,6 +7,6 @@ chefspec)
   rspec
   ;;
 *)
-  rake integration:docker[test,"$SUITE",2]
+  KITCHEN_LOCAL_YAML='.kitchen.docker.yml' kitchen test "$SUITE" --concurrency=2 --log-level=debug
   ;;
 esac
