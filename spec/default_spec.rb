@@ -6,7 +6,7 @@ describe 'test_cookbook::default' do
   context 'some context' do
     before(:all) { @included_recipes = [] }
     before do
-      @stubbed_recipes = %w[test_cookbook::included_recipe]
+      @stubbed_recipes = %w[test_cookbook::included_recipe apt]
       @stubbed_recipes.each do |r|
         allow_any_instance_of(Chef::Recipe).to receive(:include_recipe).with(r) do
           @included_recipes << r
