@@ -5,3 +5,4 @@ log 'log from test cookbook' do
 end
 
 include_recipe 'test_cookbook::included_recipe'
+include_recipe 'apt'
