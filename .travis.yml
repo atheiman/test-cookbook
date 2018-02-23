@@ -5,6 +5,7 @@ cache: bundler
 gemfile:
 - Gemfile
 - chef-13.6.Gemfile
+- chef-13.8.Gemfile
 - chef-12.Gemfile
 
 sudo: required
