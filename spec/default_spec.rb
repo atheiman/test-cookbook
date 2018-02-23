@@ -17,5 +17,9 @@ describe 'test_cookbook::default' do
     it do
       expect(chef_run).to write_log('log from test cookbook')
     end
+
+    it do
+      expect(chef_run.node.default['assigned_from_node']).to eq(['a', 'b'])
+    end
   end
 end
