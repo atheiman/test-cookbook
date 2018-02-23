@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'berkshelf'
+gem 'chef', '~> 13.6.4'
+gem 'chefspec'
+gem 'inspec'
+gem 'kitchen-docker'
+gem 'kitchen-inspec'
+gem 'kitchen-vagrant'
+gem 'test-kitchen'
