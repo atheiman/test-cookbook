@@ -16,8 +16,8 @@ rvm:
 
 env:
 - SUITE=chefspec
-- SUITE=centos
-- SUITE=ubuntu
+# - SUITE=centos
+# - SUITE=ubuntu
 
 services:
 - docker
